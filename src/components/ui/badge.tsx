@@ -1,0 +1,3 @@
+import React from 'react';
+export function Badge({className='',variant='default',...p}:React.HTMLAttributes<HTMLSpanElement>&{variant?:'default'|'secondary'|'outline'}){const v={default:'bg-indigo-600 text-white',secondary:'bg-slate-700 text-white',outline:'border border-slate-600 text-slate-200'}[variant];return <span className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs ${v} ${className}`} {...p}/>}
+export default Badge;

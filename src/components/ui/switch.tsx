@@ -1,0 +1,3 @@
+import React from 'react';
+export function Switch({checked,onCheckedChange}:{checked:boolean,onCheckedChange:(v:boolean)=>void}){return (<button onClick={()=>onCheckedChange(!checked)} className={`w-10 h-6 rounded-full transition ${checked?'bg-indigo-600':'bg-slate-600'} relative`}><span className={`absolute top-0.5 h-5 w-5 rounded-full bg-white transition ${checked?'left-5':'left-0.5'}`}/></button>)}
+export default Switch;
